@@ -1,0 +1,30 @@
+footer {
+  .list {
+    background: $color--footer-background;
+  }
+
+  .nav {
+    background: $color--footer-background;
+    flex-direction: column;
+    justify-content: center;
+    @include flexDirection(column);
+    align-items: center;
+    font-size: 5px;
+    padding: 1em;
+    min-height: 150px;
+    max-height: 250px;
+    justify-content: center;
+
+    @media (min-width: 400px) {
+      font-size: 10px;
+      padding: 4em;
+    }
+    &__link {
+      font-size: 10px;
+
+      @media (min-width: 350px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

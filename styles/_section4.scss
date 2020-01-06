@@ -1,0 +1,55 @@
+.section-4 {
+  @include gridColumnRowGap(1fr, 1fr 1fr, 0);
+  background: $color--site-background-2;
+
+  @media (min-width: 800px) {
+    background: $color--site-background-2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 543px;
+  }
+}
+
+.section4-text {
+  @media (min-width: 500px) {
+    align-self: center;
+    padding: 90px 80px;
+  }
+
+  @media (min-width: 800px) {
+    order: 1;
+  }
+}
+
+.article1,
+.article2 {
+  @media (min-width: 500px) {
+    min-width: 400px;
+  }
+
+  h4 {
+    @include h4();
+    color: #ff8673;
+
+    @media (min-width: 500px) {
+      padding: 0;
+    }
+    @media (min-width: 800px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    @extend %text-paragraph;
+    color: $paragraph--text-color;
+
+    @media (min-width: 500px) {
+      text-align: left;
+      padding: 0;
+    }
+    @media (min-width: 800px) {
+      font-size: 16px;
+    }
+  }
+}

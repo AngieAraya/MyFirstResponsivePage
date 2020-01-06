@@ -1,0 +1,43 @@
+$color--nav-background: #394951;
+$color--site-background-1: #f8f8f8;
+$color--site-background-2: #394951;
+$color--logo-text: #ff8673;
+$color--menu-text: #eaddd9;
+$color--footer-background: #2d3039;
+$collage--textbox-background: #9aa5aa;
+$paragraph--text-color: #ffffff;
+
+@mixin flexDirection($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin gridColumnRowGap($columns, $rows, $gap) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+@mixin h4() {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.17px;
+  text-align: left;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+}
+
+%text-paragraph {
+  font-size: 14px;
+  letter-spacing: 0.52px;
+  padding: 0px 20px;
+  font-weight: normal;
+}
+
+%general-h3 {
+  font-size: 25px;
+  letter-spacing: 0.92px;
+  text-align: center;
+  margin-bottom: 0px;
+}
